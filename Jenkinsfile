@@ -7,7 +7,7 @@ pipeline {
 
      stage('Prepare') {
       
-      git credentialsId: 'git-cred', url: ''
+      git credentialsId: 'git-cred', url: 'https://github.com/Maram-Rebai/test.git'
       if (!fileExists("docker-compose.yml")) {
          error('Dockerfile pas trouve')
           }
